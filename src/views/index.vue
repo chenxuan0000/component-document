@@ -8,7 +8,7 @@
                 </h2>
                 <div class="list">
                     <router-link :to="item.link" v-for="(item,index) in list" :key="index">{{item.name}}</router-link>
-                    <a href="https://github.com/vue-plug-in/echarts-encapsulation" target="_blank">
+                    <a href="https://github.com/chenxuan0000" target="_blank">
                         <Icon type="social-github"></Icon>
                         GitHub
                     </a>
