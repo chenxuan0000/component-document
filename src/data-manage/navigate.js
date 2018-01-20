@@ -7,17 +7,17 @@ const list = {
       title: 'vue无缝滚动',
       list: [
         {
-          title: '方向(direction)',
+          title: 'seamless-方向',
           path: '/component/seamless-default',
           icon: 'ios-grid-view-outline'
         },
         {
-          title: '监听data(watch)',
+          title: 'seamless-监听data',
           path: '/component/seamless-watch',
           icon: 'ios-grid-view-outline'
         },
         {
-          title: '其他参数(other)',
+          title: 'seamless-其他参数',
           path: '/component/seamless-others',
           icon: 'ios-grid-view-outline'
         }
