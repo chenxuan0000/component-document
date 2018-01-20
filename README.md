@@ -5,7 +5,7 @@
 </p>     
                                        
 <p align="center">
-   🌾 <a href="https://chenxuan0000.github.io/component-document/index-prod.html" target="_blank">文档入口</a> 
+   🌾 <a href="https://chenxuan0000.github.io/component-document/index_prod.html" target="_blank">文档入口</a> 
 </p>
 
 ## License
