@@ -109,7 +109,6 @@ code.bottom = `
                     return {
                             direction: 0
                         }
-                      }
                 }
              }
        }
@@ -155,7 +154,6 @@ code.left = `
                             direction: 2,
                             limitMoveNum: 2
                         }
-                      }
                 }
              }
        }
@@ -208,7 +206,6 @@ code.right = `
                             direction: 3,
                             limitMoveNum: 4
                         }
-                      }
                 }
              }
        }
@@ -269,7 +266,6 @@ code.step = `
                     return {
                             step: 3
                         }
-                      }
                 }
              }
        }
@@ -330,7 +326,6 @@ code.hover = `
                     return {
                             hoverStop: false
                         }
-                      }
                 }
              }
        }
@@ -386,12 +381,11 @@ code.singleHeight = `
                  }]
                 }
             },
-            computed: {
-                optionSingleHeight () {
-                    return {
-                            singleHeight: 26
-                        }
-                      }
+        computed: {
+              optionSingleHeight () {
+                  return {
+                           singleHeight: 26
+                         }
                 }
              }
        }
@@ -453,12 +447,12 @@ code.singleHeightTime = `
                             singleHeight: 26,
                             waitTime: 2500
                         }
-                      }
                 }
              }
        }
 </script>
 `;
+
 code.watch = `
 <template>
     <vue-seamless-scroll :data="listData" :class-option="optionWatch" class="seamless-warp">
@@ -514,7 +508,6 @@ code.watch = `
                     return {
                             limitMoveNum: 10
                         }
-                      }
                 }
             },
             created () {
@@ -581,7 +574,6 @@ code.noWatch = `
                             limitMoveNum: 10,
                             openWatch: false
                         }
-                      }
                 }
             },
             created () {

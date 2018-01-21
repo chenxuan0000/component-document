@@ -28,8 +28,13 @@ const list = {
       title: 'vue-svg进度条',
       list: [
         {
-          title: '常规配置',
+          title: 'progress-常规配置',
           path: '/component/svg-bar-default',
+          icon: 'ios-grid-view-outline'
+        },
+        {
+          title: 'progress-实例',
+          path: '/component/svg-bar-super',
           icon: 'ios-grid-view-outline'
         }
       ]

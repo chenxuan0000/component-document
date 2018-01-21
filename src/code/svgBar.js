@@ -1,57 +1,68 @@
 let code = {};
 
-code.top = `
+code.default = `
 <template>
-    <vue-seamless-scroll :data="listData" class="seamless-warp">
-        <ul class="item">
-            <li v-for="item in listData">
-                <span class="title" v-text="item.title"></span><span class="date" v-text="item.date"></span>
-            </li>
-        </ul>
-    </vue-seamless-scroll>
+    <svg-bar value="65"></svg-bar>
 </template>
-<style lang="scss" scoped>
-    .seamless-warp {
-        height: 229px;
-        overflow: hidden;
-    }
-</style>
+`;
+code.radiusCircleWidth = `
+<template>
+    <svg-bar value="90" :options="{radius:130,circleWidth:30}"></svg-bar>
+</template>
+`;
+code.rectDefault = `
+<template>
+    <svg-bar value="65" type="rect"></svg-bar>
+</template>
+`;
+code.rectDefault = `
+<template>
+    <svg-bar value="65" type="rect" :options="{rectRadius:10}"></svg-bar>
+</template>
+`;
+code.pathColors = `
+<template>
+    <svg-bar value="65" :options="{pathColors: ['yellow','rgb(33, 150, 243)']}"></svg-bar>
+</template>
+`;
+code.varyStrokeArray1 = `
+<template>
+    <svg-bar value="65" :options="{radius:100,circleLineCap: 'round',varyStrokeArray: [10,20]}"></svg-bar>
+</template>
+`;
+code.varyStrokeArray2 = `
+<template>
+    <svg-bar value="65" :options="{radius:100,circleLineCap: 'round',varyStrokeArray: [20,10]}"></svg-bar>
+</template>
+`;
+code.varyStrokeArray3 = `
+<template>
+    <svg-bar value="65" type="rect" :options="{varyStrokeArray: [20,10]}"></svg-bar>
+</template>
+`;
+code.text = `
+<template>
+    <svg-bar value="65.88" :options="options"></svg-bar>
+</template>
 <script>
     export default {
-        data () {
-            return {
-                listData: [{
-                   'title': '无缝滚动第一行无缝滚动第一行',
-                   'date': '2017-12-16'
-                 }, {
-                    'title': '无缝滚动第二行无缝滚动第二行',
-                    'date': '2017-12-16'
-                 }, {
-                     'title': '无缝滚动第三行无缝滚动第三行',
-                     'date': '2017-12-16'
-                 }, {
-                     'title': '无缝滚动第四行无缝滚动第四行',
-                     'date': '2017-12-16'
-                 }, {
-                     'title': '无缝滚动第五行无缝滚动第五行',
-                     'date': '2017-12-16'
-                 }, {
-                     'title': '无缝滚动第六行无缝滚动第六行',
-                     'date': '2017-12-16'
-                 }, {
-                     'title': '无缝滚动第七行无缝滚动第七行',
-                     'date': '2017-12-16'
-                 }, {
-                     'title': '无缝滚动第八行无缝滚动第八行',
-                     'date': '2017-12-16'
-                 }, {
-                     'title': '无缝滚动第九行无缝滚动第九行',
-                     'date': '2017-12-16'
-                 }]
+            computed: {
+                options () {
+                    return {
+                            radius: 80,
+                            text: function (value) {
+                                  return this.htmlifyNumber(value) + '<span style="font-size: 0.4em;">%</span>';
+                                 },
+                            textColor: 'rgb(33, 150, 243)'
+                        }
                 }
-            }
+             }
        }
 </script>
 `;
-
+code.gradientColor = `
+<template>
+    <svg-bar value="62" type="rect" :options="{gradientColor: ['rgb(33, 150, 243)','yellow']}"></svg-bar>
+</template>
+`;
 export default code;
