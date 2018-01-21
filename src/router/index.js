@@ -8,6 +8,7 @@ const introduce = (resolve) => require(['views/introduce.vue'], resolve)
 const seamlessDefault = (resolve) => require(['views/components/seamless-default.vue'], resolve)
 const seamlessOthers = (resolve) => require(['views/components/seamless-others.vue'], resolve)
 const seamlessWatch = (resolve) => require(['views/components/seamless-watch.vue'], resolve)
+const svgBarDefault = (resolve) => require(['views/components/svg-bar-default.vue'], resolve)
 
 export default new Router({
   routes: [
@@ -34,6 +35,10 @@ export default new Router({
     {
       path: '/component/seamless-watch',
       component:seamlessWatch
+    },
+    {
+      path: '/component/svg-bar-default',
+      component:svgBarDefault
     }
   ]
 })

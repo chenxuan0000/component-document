@@ -22,6 +22,17 @@ const list = {
           icon: 'ios-grid-view-outline'
         }
       ]
+    },
+    {
+      type: 'svg-progress-bar',
+      title: 'vue-svg进度条',
+      list: [
+        {
+          title: '常规配置',
+          path: '/component/svg-bar-default',
+          icon: 'ios-grid-view-outline'
+        }
+      ]
     }]
 };
 

@@ -47,14 +47,14 @@
             <seamless-brief></seamless-brief>
             <Demo title="速度(step)">
                 <div slot="demo">
-                    <vue-seamless-scroll :data="listData" :class-option="optionStep" class="seamless-warp">
+                    <seamless :data="listData" :class-option="optionStep" class="seamless-warp">
                         <ul class="item">
                             <li v-for="item in listData"><span class="title" v-text="item.title"></span><span
                                     class="date"
                                     v-text="item.date"></span>
                             </li>
                         </ul>
-                    </vue-seamless-scroll>
+                    </seamless>
                 </div>
                 <div slot="desc">
                     <p>基本用法。向上滚动 <code>step:3</code></p>
@@ -63,14 +63,14 @@
             </Demo>
             <Demo title="鼠标悬停(hoverStop)">
                 <div slot="demo">
-                    <vue-seamless-scroll :data="listData" :class-option="optionHover" class="seamless-warp">
+                    <seamless :data="listData" :class-option="optionHover" class="seamless-warp">
                         <ul class="item">
                             <li v-for="item in listData"><span class="title" v-text="item.title"></span><span
                                     class="date"
                                     v-text="item.date"></span>
                             </li>
                         </ul>
-                    </vue-seamless-scroll>
+                    </seamless>
                 </div>
                 <div slot="desc">
                     <p>基本用法。鼠标悬停关闭 <code>hoverStop:false</code></p>
@@ -79,14 +79,14 @@
             </Demo>
             <Demo title="单行停顿(singleHeight)">
                 <div slot="demo">
-                    <vue-seamless-scroll :data="listData" :class-option="optionSingleHeight" class="seamless-warp">
+                    <seamless :data="listData" :class-option="optionSingleHeight" class="seamless-warp">
                         <ul class="item">
                             <li v-for="item in listData"><span class="title" v-text="item.title"></span><span
                                     class="date"
                                     v-text="item.date"></span>
                             </li>
                         </ul>
-                    </vue-seamless-scroll>
+                    </seamless>
                 </div>
                 <div slot="desc">
                     <p>基本用法。单行停顿 <code>singleHeight:26</code></p>
@@ -95,34 +95,19 @@
             </Demo>
             <Demo title="单行停顿时间(singleHeight,waitTime)">
                 <div slot="demo">
-                    <vue-seamless-scroll :data="listData" :class-option="optionSingleHeightTime" class="seamless-warp">
+                    <seamless :data="listData" :class-option="optionSingleHeightTime" class="seamless-warp">
                         <ul class="item">
                             <li v-for="item in listData"><span class="title" v-text="item.title"></span><span
                                     class="date"
                                     v-text="item.date"></span>
                             </li>
                         </ul>
-                    </vue-seamless-scroll>
+                    </seamless>
                 </div>
                 <div slot="desc">
                     <p>基本用法。单行停顿时间 <code>singleHeight:26</code><code>waitTime:2500</code></p>
                 </div>
                 <i-code lang="html" slot="code">{{ code.singleHeightTime }}</i-code>
-            </Demo>
-            <Demo title="向右滚动">
-                <div slot="demo">
-                    <vue-seamless-scroll :data="imgList" :class-option="optionRight" class="seamless-warp3">
-                        <ul class="item">
-                            <li v-for="item in imgList">
-                                <img :src="item.imgUrl" alt="">
-                            </li>
-                        </ul>
-                    </vue-seamless-scroll>
-                </div>
-                <div slot="desc">
-                    <p>基本用法。向右滚动 <code>direction:2</code><code>limitMoveNum: 4</code></p>
-                </div>
-                <i-code lang="html" slot="code">{{ code.right }}</i-code>
             </Demo>
         </article>
     </i-article>

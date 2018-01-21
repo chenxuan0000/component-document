@@ -46,14 +46,14 @@
             <seamless-brief></seamless-brief>
             <Demo title="向上滚动">
                 <div slot="demo">
-                    <vue-seamless-scroll :data="listData" class="seamless-warp">
+                    <seamless :data="listData" class="seamless-warp">
                         <ul class="item">
                             <li v-for="item in listData"><span class="title" v-text="item.title"></span><span
                                     class="date"
                                     v-text="item.date"></span>
                             </li>
                         </ul>
-                    </vue-seamless-scroll>
+                    </seamless>
                 </div>
                 <div slot="desc">
                     <p>基本用法。默认参数</p>
@@ -76,14 +76,14 @@
             </Demo>
             <Demo title="向下滚动">
                 <div slot="demo">
-                    <vue-seamless-scroll :data="listData" :class-option="optionDown" class="seamless-warp">
+                    <seamless :data="listData" :class-option="optionDown" class="seamless-warp">
                         <ul class="item">
                             <li v-for="item in listData"><span class="title" v-text="item.title"></span><span
                                     class="date"
                                     v-text="item.date"></span>
                             </li>
                         </ul>
-                    </vue-seamless-scroll>
+                    </seamless>
                 </div>
                 <div slot="desc">
                     <p>基本用法。向下滚动 <code>direction:0</code></p>
@@ -92,11 +92,11 @@
             </Demo>
             <Demo title="向左滚动">
                 <div slot="demo">
-                    <vue-seamless-scroll :data="newsList" :class-option="optionLeft" class="seamless-warp2">
+                    <seamless :data="newsList" :class-option="optionLeft" class="seamless-warp2">
                         <ul class="item">
                             <li v-for="item in newsList" v-text="item.title"></li>
                         </ul>
-                    </vue-seamless-scroll>
+                    </seamless>
                 </div>
                 <div slot="desc">
                     <p>基本用法。向左滚动 <code>direction:2</code><code>limitMoveNum: 2</code></p>
@@ -105,13 +105,13 @@
             </Demo>
             <Demo title="向右滚动">
                 <div slot="demo">
-                    <vue-seamless-scroll :data="imgList" :class-option="optionRight" class="seamless-warp3">
+                    <seamless :data="imgList" :class-option="optionRight" class="seamless-warp3">
                         <ul class="item">
                             <li v-for="item in imgList">
                                 <img :src="item.imgUrl" alt="">
                             </li>
                         </ul>
-                    </vue-seamless-scroll>
+                    </seamless>
                 </div>
                 <div slot="desc">
                     <p>基本用法。向右滚动 <code>direction:2</code><code>limitMoveNum: 4</code></p>

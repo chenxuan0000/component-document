@@ -47,14 +47,14 @@
             <seamless-brief></seamless-brief>
             <Demo title="开启openWatch">
                 <div slot="demo">
-                    <vue-seamless-scroll :data="listData" :class-option="optionWatch" class="seamless-warp">
+                    <seamless :data="listData" :class-option="optionWatch" class="seamless-warp">
                         <ul class="item">
                             <li v-for="item in listData"><span class="title" v-text="item.title"></span><span
                                     class="date"
                                     v-text="item.date"></span>
                             </li>
                         </ul>
-                    </vue-seamless-scroll>
+                    </seamless>
                 </div>
                 <div slot="desc">
                     <p>基本用法。关闭openWatch <code>limitMoveNum > data.length</code>
@@ -64,14 +64,14 @@
             </Demo>
             <Demo title="关闭openWatch">
                 <div slot="demo">
-                    <vue-seamless-scroll :data="listData" :class-option="optionNoWatch" class="seamless-warp">
+                    <seamless :data="listData" :class-option="optionNoWatch" class="seamless-warp">
                         <ul class="item">
                             <li v-for="item in listData"><span class="title" v-text="item.title"></span><span
                                     class="date"
                                     v-text="item.date"></span>
                             </li>
                         </ul>
-                    </vue-seamless-scroll>
+                    </seamless>
                 </div>
                 <div slot="desc">
                     <p>基本用法。关闭openWatch <code>limitMoveNum > data.length</code> 3s后data变多后不会滚动 <code>openWatch:false;</code>
