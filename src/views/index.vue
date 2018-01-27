@@ -16,7 +16,7 @@
                 </Col>
             </Row>
         </div>
-        <div id="container"></div>
+        <neon-effect :options="options"></neon-effect>
     </div>
 </template>
 
@@ -25,21 +25,18 @@
 </style>
 
 <script>
-  import {init, timer} from '../js/initThree'
   import {indexList} from '../data-manage/data'
 
   export default {
     data () {
       return {
-        list: indexList
+        list: indexList,
+        options: {
+          len: 25,
+          rate: 22
+        }
       }
     },
-    methods: {},
-    mounted () {
-      init()
-    },
-    beforeDestroy () {
-      if (timer) clearInterval(timer)
-    }
+    methods: {}
   }
 </script>

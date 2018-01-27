@@ -1,9 +1,18 @@
 {
   "presets": [
-    ["env"]
+    [
+      "env"
+    ]
   ],
   "plugins": [
-    "transform-runtime"
+    "transform-runtime",
+    [
+      "import",
+      {
+        "libraryName": "vue-canvas-effect",
+        "libraryDirectory": "src/components"
+      }
+    ]
   ],
   "comments": false
 }

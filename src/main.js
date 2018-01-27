@@ -6,10 +6,13 @@ import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 import scroll from 'vue-seamless-scroll'
 import svgBar from 'svg-progress-bar'
+import {neon} from 'vue-canvas-effect'
+
+Vue.component(neon.name,neon)
 
 Vue.use(iView)
-Vue.use(scroll,{componentName: 'seamless'})
-Vue.use(svgBar,{componentName: 'svg-bar'})
+Vue.use(scroll, {componentName: 'seamless'})
+Vue.use(svgBar, {componentName: 'svg-bar'})
 
 new Vue({
   el: '#app',
