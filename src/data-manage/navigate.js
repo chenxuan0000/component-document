@@ -12,11 +12,6 @@ const list = {
           icon: 'ios-grid-view-outline'
         },
         {
-          title: 'seamless-监听data',
-          path: '/component/seamless-watch',
-          icon: 'ios-grid-view-outline'
-        },
-        {
           title: 'seamless-其他参数',
           path: '/component/seamless-others',
           icon: 'ios-grid-view-outline'

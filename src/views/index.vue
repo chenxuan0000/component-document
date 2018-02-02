@@ -16,7 +16,7 @@
                 </Col>
             </Row>
         </div>
-        <neon-effect :options="options"></neon-effect>
+        <neon-effect :options="{}"></neon-effect>
     </div>
 </template>
 
