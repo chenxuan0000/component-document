@@ -15,6 +15,11 @@ const list = {
           title: 'seamless-其他参数',
           path: '/component/seamless-others',
           icon: 'ios-grid-view-outline'
+        },
+        {
+          title: 'seamless-switch',
+          path: '/component/seamless-switch',
+          icon: 'ios-grid-view-outline'
         }
       ]
     },

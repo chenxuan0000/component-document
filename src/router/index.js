@@ -6,6 +6,7 @@ Vue.use(Router)
 const index = (resolve) => require(['views/index.vue'], resolve)
 const introduce = (resolve) => require(['views/introduce.vue'], resolve)
 const seamlessDefault = (resolve) => require(['views/components/seamless-default.vue'], resolve)
+const seamlessSwitch = (resolve) => require(['views/components/seamless-switch.vue'], resolve)
 const seamlessOthers = (resolve) => require(['views/components/seamless-others.vue'], resolve)
 const svgBarDefault = (resolve) => require(['views/components/svg-bar-default.vue'], resolve)
 const svgBarSuper = (resolve) => require(['views/components/svg-bar-super.vue'], resolve)
@@ -29,16 +30,20 @@ export default new Router({
       component: introduce
     },
     {
+      path: '/component/seamless-switch',
+      component: seamlessSwitch
+    },
+    {
       path: '/component/seamless-others',
-      component:seamlessOthers
+      component: seamlessOthers
     },
     {
       path: '/component/svg-bar-default',
-      component:svgBarDefault
+      component: svgBarDefault
     },
     {
       path: '/component/svg-bar-super',
-      component:svgBarSuper
+      component: svgBarSuper
     }
   ]
 })
