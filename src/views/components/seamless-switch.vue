@@ -35,6 +35,15 @@
         height: 140px;
         width: 140px * 4;
         margin: 0 auto;
+        .disabled {
+            .left-arrow, .right-arrow {
+                background-color: #ccc;
+                cursor: not-allowed;
+                &:hover {
+                    background-color: #ccc;
+                }
+            }
+        }
         .left-arrow, .right-arrow {
             position: relative;
             display: inline-block;
