@@ -17,6 +17,21 @@
                 </div>
                 <i-code lang="html" slot="code">{{ code.switch1 }}</i-code>
             </Demo>
+            <Demo title="switch控制切换、自定义参数" :vertical="true">
+                <div slot="demo">
+                    <seamless :class-option="optionSwitch2" class="seamless-warp3">
+                        <span slot="left-switch" class="left-arrow"></span>
+                        <span slot="right-switch" class="right-arrow"></span>
+                        <ul class="item">
+                            <li v-for="item in listData">{{item}}</li>
+                        </ul>
+                    </seamless>
+                </div>
+                <div slot="desc">
+                    <p>switch控制切换 自定义switchSingleStep(步数大小)和switchDelay(切换时间)<code>direction:2</code><code> autoPlay: false,switchSingleStep: 100,switchDelay:50</code></p>
+                </div>
+                <i-code lang="html" slot="code">{{ code.switch2 }}</i-code>
+            </Demo>
         </article>
     </i-article>
 </template>
@@ -117,6 +132,13 @@
         return {
           autoPlay: false,
           switchSingleStep: 140
+        }
+      },
+      optionSwitch2 () {
+        return {
+          autoPlay: false,
+          switchSingleStep: 100,
+          switchDelay: 200
         }
       }
     },
