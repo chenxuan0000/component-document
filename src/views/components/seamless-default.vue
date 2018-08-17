@@ -46,7 +46,7 @@
             <seamless-brief></seamless-brief>
             <Demo title="向上滚动">
                 <div slot="demo">
-                    <seamless :data="listData" class="seamless-warp">
+                    <seamless :data="listData" class="seamless-warp" @ScrollEnd="end">
                         <ul class="item">
                             <li v-for="item in listData"><span class="title" v-text="item.title"></span><span
                                     class="date"
@@ -187,6 +187,10 @@
         }
       }
     },
-    methods: {}
+    methods: {
+        end () {
+            console.log('end')
+        }
+    }
   }
 </script>
